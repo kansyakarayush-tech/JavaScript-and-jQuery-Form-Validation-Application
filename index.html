@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>User Registration Form</h1>
+        
+        <form id="myForm">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div class="input-box">
+                <label>Email</label>
+                <input type="text" id="email" placeholder="user@example.com">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="input-box">
+                <label>Phone Number</label>
+                <input type="text" id="phone" placeholder="10 digit number" maxlength="10">
+                <span class="error" id="phoneError"></span>
+            </div>
+
+            <div class="input-box">
+                <label>Password</label>
+                <div class="password-box">
+                    <input type="password" id="password" placeholder="Enter password">
+                    <span class="toggle-btn" id="toggleBtn">👁️</span>
+                </div>
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <div id="message"></div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
